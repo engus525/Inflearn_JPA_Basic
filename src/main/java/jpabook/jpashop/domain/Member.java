@@ -1,12 +1,11 @@
 package jpabook.jpashop.domain;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Entity
-@Table(uniqueConstraints = {
-        @UniqueConstraint(name = "name_email_unique",
-                columnNames = {"name", "email"})})
 public class Member
 {
     @Id
@@ -17,6 +16,10 @@ public class Member
     private String city;
     private String street;
     private String zipcode;
+
+    //Bad Logic. 예시 차원에서만 구현해본 것.
+    @OneToMany(mappedBy = "member")
+    private List<Order> orders = new ArrayList<>();
 
     public Long getId()
     {
