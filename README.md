@@ -1,4 +1,4 @@
-# Inflearn_JPA_Basic_Practice
+# Inflearn_JPA_Basic
 자바 ORM 표준 JPA 프로그래밍 - 기본편
 
 ## 타입 B - 야생형 코스로 수강합니다.
