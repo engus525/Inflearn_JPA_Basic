@@ -20,7 +20,8 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
             <!--  spring boot refrece doc에서 org.hibernate 확인 -->
-            <version>5.3.10.Final</version>
+            <!-- h2와 호환되는 hibernate를 사용해서 fk관련 drop table issue 해결-->
+            <version>5.6.15.Final</version>
         </dependency>
         <!-- H2 데이터베이스 -->
         <dependency>
