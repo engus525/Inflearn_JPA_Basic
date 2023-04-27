@@ -1,5 +1,5 @@
 # Inflearn_JPA_Basic_Practice
-JPA 기본편 -  실전 예제 코드
+자바 ORM 표준 JPA 프로그래밍 - 기본편
 
 ## 타입 B - 야생형 코스로 수강합니다.
 <img width="878" alt="스크린샷 2023-04-05 오후 10 59 12" src="https://user-images.githubusercontent.com/66135897/230103879-0abafe0b-c2a0-45dd-9405-d76c911a642c.png">
