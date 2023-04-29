@@ -4,6 +4,8 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static javax.persistence.FetchType.LAZY;
+
 @Entity
 public class Category extends BaseEntity
 {
@@ -14,7 +16,12 @@ public class Category extends BaseEntity
 
     private String name;
 
+    @ManyToOne(fetch = LAZY)
+    @JoinColumn(name = "PARENT_ID")
+    private Category parent;
 
+    @OneToMany(mappedBy = "parent")
+    private List<Category> child = new ArrayList<>();
 
     //Bad Logic. 1:N - N:1 로 풀어쓸 것
     @ManyToMany
